@@ -10,3 +10,4 @@ Fresh base project Laravel dengan Laravel
 - Jalankan `php artisan migrate`.
 - Jalankan `php artisan key:generate`.
 - Coba akses rute: `/nova` untuk mengetahui berhasilnya instalasi.
+- Untuk menambahkan user nova, jalankan `php artisan nova:user`.
