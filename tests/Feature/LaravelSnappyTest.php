@@ -20,10 +20,6 @@ class LaravelSnappyTest extends TestCase
         $pdf = App::make('snappy.pdf.wrapper');
         $pdf->loadHTML('<h1>Test</h1>');
         $response = $pdf->inline();
-
-        // $pdf = PDF::loadView('pdf.invoice', $data);
-        // return $pdf->download('invoice.pdf');
-
         $this->assertEquals('application/pdf', $response->headers->get('Content-Type'));
     }
 }
