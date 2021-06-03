@@ -1,4 +1,0 @@
-#!/usr/bin/env sh
-
-php artisan config:clear && \
-php artisan test
